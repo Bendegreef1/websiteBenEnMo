@@ -1,0 +1,24 @@
+.blue-background {
+    background-color: blue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    order: 1;
+}
+
+nav .nav-items {
+    order: 2;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav .social-media {
+    order: 3;
+}
