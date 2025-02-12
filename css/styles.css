@@ -2,10 +2,30 @@
     background-color: blue;
 }
 
+* {
+    font-family: 'nunito';
+}
+
+p,
+a,
+b,
+li,
+i {
+    font-family: 'PT Sans';
+}
+
+.linkzonderkleur,
+.linkzonderkleur:visited,
+.linkzonderkleur:hover,
+.linkzonderkleur:active {
+    color: inherit;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
 }
 
 nav .logo {
@@ -35,7 +55,47 @@ nav .social-media {
     transform-style: preserve-3d;
 }
 
+
+
 .titel {
     color: white;
     background: rgba(0, 0, 0, 0.6);
+    line-height: 58px;
+}
+
+.subtitel {
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.voorstellingen {
+    background-color: whitesmoke
+}
+
+.card {
+    background-color: #CCFFCC !important;
+    border: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wiezijnwijlijn {
+    border-color: black !important;
+    border-width: 10px !important;
+    ;
+
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: whitesmoke;
 }
