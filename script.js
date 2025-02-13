@@ -11,6 +11,7 @@ const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/valu
 
 async function fetchGoogleSheetData() {
     try {
+        console.log(apiKey);
         // Fetch data from Google Sheets API
         const response = await fetch(url);
         const data = await response.json();
