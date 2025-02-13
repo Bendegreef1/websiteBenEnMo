@@ -3,10 +3,11 @@ const spreadsheetId = '1wbJSoqMV6hJCYX0ttGPNm-LSLr95NQ11bKiucsdi6sU';
 
 // Replace with your API Key
 
+const apiKey = "";
 
-const apiKey = async (request, context) => {
+async function getAPIkey(request, context) {
     const value = Netlify.env.get("GOOGLE_SHEETS_API_KEY");
-    return value;
+    apiKey = value;
 }
 
 // Construct the URL for Google Sheets API v4
