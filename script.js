@@ -2,7 +2,7 @@
 const spreadsheetId = '1wbJSoqMV6hJCYX0ttGPNm-LSLr95NQ11bKiucsdi6sU';
 
 // Replace with your API Key
-const apiKey = 'AIzaSyBNPWwjcyeeqQxEs7a8RuWCUCGL3tRl3Mc';
+const apiKey = ProcessingInstruction.env.GOOGLE_SHEETS_API_KEY;
 
 // Construct the URL for Google Sheets API v4
 const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values:batchGet?ranges=2025-2026&ranges=2024-2025&key=${apiKey}`;
