@@ -7,6 +7,7 @@ const apiKey = "";
 
 async function getAPIkey(request, context) {
     const value = Netlify.env.get("GOOGLE_SHEETS_API_KEY");
+    console.log(value);
     apiKey = value;
 }
 
