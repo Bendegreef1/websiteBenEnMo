@@ -1,5 +1,5 @@
 exports.handler = async function (event, context) {
-    const value = Netlify.env.get("GOOGLE_SHEETS_API_KEY");
+    const value = process.env.get("GOOGLE_SHEETS_API_KEY");
 
     return {
         statusCode: 200,
