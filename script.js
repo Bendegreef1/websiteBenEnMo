@@ -2,7 +2,12 @@
 const spreadsheetId = '1wbJSoqMV6hJCYX0ttGPNm-LSLr95NQ11bKiucsdi6sU';
 
 // Replace with your API Key
-const apiKey = process.env.GOOGLE_SHEETS_API_KEY;
+
+
+const apiKey = async (request, context) => {
+    const value = Netlify.env.get("GOOGLE_SHEETS_API_KEY");
+    return value;
+}
 
 // Construct the URL for Google Sheets API v4
 const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values:batchGet?ranges=2025-2026&ranges=2024-2025&key=${apiKey}`;
