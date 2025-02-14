@@ -10,7 +10,8 @@ p,
 a,
 b,
 li,
-i {
+i,
+h5 {
     font-family: 'PT Sans';
 }
 
@@ -73,16 +74,17 @@ nav .social-media {
 }
 
 .card {
-    background-color: #CCFFCC !important;
+    background-color: blueviolet !important;
     border: none !important;
+    color: white !important;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.wiezijnwijlijn {
-    border-color: black !important;
+.wieZijnWijLijn {
+    border-color: blueviolet !important;
     border-width: 10px !important;
     ;
 
@@ -98,4 +100,12 @@ body {
 .footer {
     margin-top: auto;
     background-color: whitesmoke;
+}
+
+.wieZijnWij {
+    color: blueviolet !important;
+}
+
+.groen {
+    color: forestgreen !important;
 }
