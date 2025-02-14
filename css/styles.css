@@ -109,3 +109,31 @@ body {
 .groen {
     color: forestgreen !important;
 }
+
+.img-fluid-custom {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .img-fluid-custom {
+        height: 390px;
+        /* Set a fixed height after the md breakpoint */
+        object-fit: cover;
+        /* Ensures the image covers the area without stretching */
+    }
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: blueviolet !important;
+    border-color: blueviolet !important;
+}
+
+.youtubeVideo {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
